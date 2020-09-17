@@ -6,12 +6,12 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
-public class App extends Application {
+public class MediaPlayerApp extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception{
-        Parent root = FXMLLoader.load(getClass().getResource("/sample.fxml"));
-        primaryStage.setTitle("Hello World");
+        Parent root = FXMLLoader.load(getClass().getResource("/eu/shalldev/player/view/media-player-ui.fxml"));
+        primaryStage.setTitle("Media Player");
         primaryStage.setScene(new Scene(root, 300, 275));
         primaryStage.show();
     }
